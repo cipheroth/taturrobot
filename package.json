@@ -1,0 +1,21 @@
+{
+  "name": "taturrobot",
+  "version": "1.0.0",
+  "description": "TaturroBot Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "taturro",
+    "telegram"
+  ],
+  "author": "Santiago Lazo M0rdr3d",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}

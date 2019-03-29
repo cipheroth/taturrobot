@@ -1,0 +1,228 @@
+<html>
+
+<body>
+    <style>
+        .botoncito {
+            background: linear-gradient(40deg, white 0%, gray 85%);
+            border: black 1px solid;
+            border-radius: 15px;
+            height: 30px;
+        }
+
+        p strong {
+            color: grey;
+            display: block;
+        }
+
+        body {
+            background: linear-gradient(20deg, gray 20%, white 90%);
+        }
+
+        div:not(.help) span {
+            color: gray;
+        }
+
+        div.help span {
+            color: red;
+        }
+
+        /* strong es hijo directo (no es nieto ni descendiente es HIJO) de h1 */
+        h1>strong {
+            color: red;
+        }
+
+        a:hover:link {
+            color: orange;
+        }
+
+        a:hover:visited {
+            color: gray
+        }
+
+        :root {
+            border: 1px dotted gray;
+        }
+
+        body {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .beavis-border-box {
+            box-sizing: border-box;
+            width: 300px;
+            height: 250px;
+            border: 10px solid firebrick;
+            padding: 40px;
+
+        }
+
+        .beavis-content-box {
+            box-sizing: content-box;
+            width: 300px;
+            height: 250px;
+            border: 10px solid cornflowerblue;
+            padding: 40px;
+
+        }
+
+        .parent {
+            width: 600px;
+            border: 1px solid red;
+        }
+
+        .child-auto {
+            margin-left: 100px;
+            margin-right: auto;
+            width: 150px;
+            border: 1px solid aqua;
+        }
+
+        .child-auto2 {
+            margin-left: 100px;
+            margin-right: 100px;
+            width: auto;
+            border: 1px solid aqua;
+        }
+
+        .child-auto3 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            border: 1px solid aqua;
+        }
+
+        .parent1 {
+            padding: 50px;
+            background: silver;
+        }
+
+        /* MUY IMPORTANTE EL MARGEN  */
+        .p1 {
+            margin: 30px;
+            padding: 0;
+            background: white;
+            border: 1px solid aqua;
+
+        }
+
+        .texto-izquierda {
+            background: aqua;
+            border: 1px solid red;
+            text-align: left;
+        }
+
+        .texto-derecha {
+            background: antiquewhite;
+            border: 1px solid black;
+            text-align: right;
+        }
+
+        .texto-centro {
+            background: aquamarine;
+            border: 1px solid blueviolet;
+            text-align: center;
+        }
+
+        .texto-justificado {
+            background: azure;
+            border: 1px solid olivedrab;
+            text-align: justify;
+        }
+
+        /* working */
+        /* a:link {color: blue;}
+            a:visited {color: purple;}
+            a:focus {color: green;}
+            a:hover {color: red;}
+            a:active {color: orange;} */
+
+        /* a:active {color: orange;}
+            a:focus {color: green;}
+            a:hover {color: red;}
+            a:link {color: blue;}
+            a:visited {color: purple;} */
+    </style>
+
+    <div>
+        <p>Coming Home !!</p>
+        <strong>We are gonna make it !</strong>
+        <p>Esto es un <strong>mess</strong> haha ahha ahah<p>
+                <button class="botoncito">Give me a Click Click Now !!</button>
+    </div>
+
+    <div class="help">
+        <div class="aside">
+            This text contains <span>a span element</span> within.
+        </div>
+    </div>
+
+    <h1>This is <strong>very</strong> important.</h1>
+    <h1>This is <em>really <strong>very</strong></em> important.</h1>
+    <a href="#">Zen CSS 1</a> <br>
+    <a href="#">Zen CSS 2</a>
+
+    <div class="beavis-border-box">
+        <img src="neavis00.gif" alt="Beavis">
+    </div>
+
+    <div class="beavis-content-box">
+        <img src="neavis00.gif" alt="Beavis">
+    </div>
+
+    <div class="parent">
+        <img class="child-auto" src="neavis00.gif" alt="">
+    </div>
+
+    <div class="parent">
+        <img class="child-auto2" src="neavis00.gif" alt="">
+    </div>
+
+    <div class="parent">
+        <p class="child-auto2">fsdkjfhdsjf jsdhfkjdhsfdsfkjsdhfsdk
+            sdfsdfsdfsdfsdfsdfsdfsdflsdfosdiuf osduoi udsfos oisdufsdoifu
+        </p>
+    </div>
+
+    <div class="parent">
+        <p class="child-auto3">fsdkjfhdsjf jsdhfkjdhsfdsfkjsdhfsdk
+            sdfsdfsdfsdfsdfsd fsdfsdflsdfosdiuf osduoi udsfos oisdufsdoifu
+        </p>
+    </div>
+
+    <div class="parent1">
+        <p class="p1">fsdkjfhdsjf jsdhfkjdhsfdsfkjsdhfsdk
+            sdfsdfsdfsdfsdfsd fsdfsdflsdfosdiuf osduoi udsfos oisdufsdoifu
+        </p>
+    </div>
+
+    <p class="texto-izquierda">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum." </p>
+
+    <p class="texto-derecha">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum." </p>
+
+    <p class="texto-centro">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum." </p>
+
+    <p class="texto-justificado">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum." </p>
+</body>
+
+</html>

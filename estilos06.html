@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body class="imagencilla">
+    
+    <style>
+        .grid {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "head head head head"
+                                "leftside content content rightside"
+                                "leftside footer footer footer";
+            grid-template-columns: 150px 1fr 1fr 100px;
+            grid-template-rows: 120px 1fr 100px;
+
+        }
+
+        #masthead {
+            grid-area: head; 
+            /* grid-row-start: head;
+            grid-column-start: head;
+            grid-row-end: head; */
+            border: 1px solid red;
+            background: orange;
+            opacity: 0.7;
+        }
+
+        #sidebar {
+            grid-area: leftside; 
+            /* grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: leftside / span 1; */
+            border: 1px dashed blue;
+            background: darkgrey;
+            opacity: 0.7;
+        }
+
+        #main {
+            grid-area: content;
+            /* grid-row-start: content;
+            grid-row-end: content;
+            grid-column-start: content; */
+            border: 1px double lawngreen;
+            background: olive;
+            opacity: 0.7;
+        }
+
+        #navbar {
+            grid-area: rightside;
+            /* grid-row-start: rightside;
+            grid-row-end: 3;
+            grid-column-start: rightside; */
+            border: 1px dotted darkorchid;
+            background: skyblue;
+            opacity: 0.7;
+        }
+
+        #footer {
+            grid-area:footer;
+            /* grid-row-start: 3;
+            grid-row-end: span 1;
+            grid-column-start: footer;
+            grid-row-end: footer; */
+        
+            background: floralwhite;
+            opacity: 0.7;
+            border: 1px solid lightcoral;
+        }
+
+        .imagencilla{
+        
+            background-image:  url(/Users/mordred/Pictures/7C4.jpg) ;
+            z-index: -2000;
+
+        }
+
+
+        /* .grid{
+            display:grid;
+            width:50em;
+            grid-template-rows: repeat(5, 5em);
+            grid-template-columns: repeat(10, 5em);
+        }
+         */
+
+        /*.one{
+            grid-row-start:2;
+            grid-row-end:4;
+            grid-column-start:2;
+            grid-column-end:4;
+        }
+        .two{
+            grid-row-start:1;
+            grid-row-end:3;
+            grid-column-start:5;
+            grid-column-end:10;
+        }
+        .three{
+            grid-row-start: 4;
+            grid-column-start: 6;
+        } */
+    </style>
+
+    <section class="grid">
+    
+            <article id="masthead">HEADER </article>
+            <article id="sidebar">SIDEBAR </article>
+            <article id="main">MAIN</article>
+            <article id="navbar">NAVBAR</article>
+            <article id="footer">FOOTER</article>
+        
+       
+    </section>
+</body>
+
+</html>
